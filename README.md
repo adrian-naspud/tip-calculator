@@ -51,7 +51,3 @@ This project taught me how to create different functions for each elements and h
 
 In the future, I really want to make more project that can test my logic skills and see how far I can really go. 
 
-## Author
-
-- Website - [Jason Zeng](https://mister-zeng.github.io/Portfolio-Website/)
-- Twitter - [@misterzeng](https://www.twitter.com/misterzeng)
