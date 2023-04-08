@@ -1,81 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
-  <title>Tip Calculator App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/alogo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Adrian Naspud - Front-End Developer</title>
 </head>
 
 <body>
-  <main>
-    <div class="mainLogoContainer"><img src="https://raw.githubusercontent.com/Mister-Zeng/Tip-Split-Calculator/a1bf82ebdb04efcb80542794966f713b2d2fd57e/images/logo.svg" id="mainLogo" alt="logo"></div>
-    <div class="container">
+    <main>
+        <nav class="nav-bar">
+            <a class="navbar-brand" href="#" rel="noopener noreferrer">
+                <img src="./images/alogo.png" alt="logo" id="logo" width="50" height="50">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 
-      <div class="container2">
-        <div class="box1">
-          <label id="billAmountLabel" for="billAmount">
-            <h1>Bill</h1>
-          </label>
-          <img src="https://raw.githubusercontent.com/Mister-Zeng/Tip-Split-Calculator/a1bf82ebdb04efcb80542794966f713b2d2fd57e/images/icon-dollar.svg" id="dollarLogo" alt="dollarLogo">
-          <input id="numOfBillInput" type="number" placeholder="0">
+        <div class="background-container">
+            <img src="./images/background-2.jpg" id="background-image" alt="background">
         </div>
 
+        <section class="first-section-container">
+            <div class="first-section">
+                <h1 id="name">A D R I A N</h1>
+                <h1 id="name">N A S P U D</h1>
+                <p id="job-title">F R O N T - E N D D E V E L O P E R</p>
+                <p id="description">BRING YOUR IDEA TO LIFE </p>
+            </div>
+            <div class="header-icon-container">
+                <div class="header-icon-container">
+                    <a href="https://github.com/Adrian-Naspud" class="anchor-icon" target="_blank"
+                      rel="noopener noreferrer">
+                        <img src="./images/github-grey-icon.svg" class="header-icon" alt="Github">
+                    </a>
+                    <!-- <a href="https://twitter.com/misterzeng" class="anchor-icon" target="_blank"
+                      rel="noopener noreferrer">
+                        <img src="./images/twitter-grey-icon.svg" class="header-icon" alt="Twitter">
+                    </a> -->
+                    <a href="https://www.linkedin.com/in/adriannaspud/" class="anchor-icon" target="_blank"
+                      rel="noopener noreferrer">
+                        <img src="./images/linkedin-grey-icon.svg" class="header-icon" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:officialjasonzeng@gmail.com" class="anchor-icon" target="_blank"
+                      rel="noopener noreferrer">
+                        <img src="./images/email-grey-icon.svg" class="header-icon" alt="Email">
+                    </a>
+                </div>
+                <div class="first-section-horizontal-line"></div>
+            </div>
+        </section>
 
-        <div class="box2">Select Tip %</div>
+        <section class="about-section reveal" id="about">
+            <div class="about-section-background">
+                <div class="sub-heading">
+                    <h3>About Me</h3>
+                    <div class="about-horizontal-line"></div>
+                </div>
+                <div class="intro">
+                    <p class="intro-description">I am a <b id="intro-bold">Front-End Developer</b> who enjoy the
+                        challenge of developing applications that are not only responsive and user friendly, but also
+                        offer intuitive solutions to complex problems that help shape the evolving digital world. In
+                        addition to my knowledge, I am actively learning and expanding my knowledge everyday and staying
+                        up to date with trends and current standards in the industry.
+                    </p>
+                    <img src="./images/adrian_user.jpg" id="headshot" alt="headshot">
+                </div>
+            </div>
+            <h6 class="skill-heading reveal" id="skills">Technical Skills</h6>
+            <div class="skills-container reveal">
+                <div class="html circle-container">
+                    <div class="outer-circle">
+                        <img src="./images/html.svg" class="circle" alt="HTML">
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div class="css circle-container">
+                    <div class="outer-circle">
+                        <img src="./images/css.svg" class="circle" alt="CSS">
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div class="javascript circle-container">
+                    <div class="outer-circle">
+                        <img src="./images/javascript.svg" class="circle" alt="JavaScript">
+                    </div>
+                    <p>JavaScript</p>
+                </div>
 
-        <div class="box3">
-          <button class="tipPercentage btn" id="5"> 5%</button>
-          <button class="tipPercentage btn" id="10">10%</button>
-          <button class="tipPercentage btn btn-active" id="15"> 15%</button>
-          <button class="tipPercentage btn" id="25">25%</button>
-          <button class="tipPercentage btn" id="50">50%</button>
-          <input class="tipPercentage btn" id="custom" placeholder="Custom" type="number">
-        </div>
+                <div class="react circle-container">
+                    <div class="outer-circle">
+                        <img src="./images/react.svg" class="circle" alt="React">
+                    </div>
+                    <p>React</p>
+                </div>
 
-        <div class="box4">
-          <div class="labelWrapper">
-            <label for="numOfPeople" id="amountOfPeople">Number of People</label>
-            <div class="errorMsg">Can't be zero</div>
-          </div>
+                <div class="git circle-container">
+                    <div class="outer-circle">
+                        <img src="./images/git.svg" class="circle" alt="Git">
+                    </div>
+                    <p>Git</p>
+                </div>
 
-          <img src="https://raw.githubusercontent.com/Mister-Zeng/Tip-Split-Calculator/a1bf82ebdb04efcb80542794966f713b2d2fd57e/images/icon-person.svg" id="personLogo" alt="personLogo">
-          <input id="numOfPeopleInput" value="1" type="number" autofocus name="numOfPeople" placeholder="0">
-        </div>
 
-      </div>
+                <div class="bootstrap circle-container">
+                    <div class="outer-circle">
+                        <img src="./images/bootstrap.svg" class="circle" alt="Bootstrap">
+                    </div>
+                    <p>Bootstrap</p>
+                </div>
 
-      <div class="box5">
 
-        <div class="tipAmount">
-          <div class="sect1">
-            <div class="class5">Tip Amount</div>
-            <div class="perPerson">/ person</div>
-          </div>
+            </div>
+        </section>
 
-          <div class="displayMoney" id="displayMoney1">$0.00</div>
-        </div>
+        <section class="projects-section" id="projects">
+            <div class="projects-section-background">
+                <div class="sub-heading">
+                    <h3 class='reveal'>Projects</h3>
+                    <div class="projects-horizontal-line reveal"></div>
+                </div>
+            </div>
 
-        <div class="totalBill">
-          <div class="sect2">
-            <div class="class5"> Total</div>
-            <div class="perPerson">/ person </div>
-          </div>
+            <div class="projects-container">
+                <div>
 
-          <div class="displayMoney" id="displayMoney2">$0.00</div>
-        </div>
-        <div class="resetButtonDiv">
-          <button class="resetButton btn">RESET</button>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="app.js"></script>
+                    <div class="projects-sub-container reveal">
+                        <div class="ip-address-tracker">
+                            <h4>IP Address Tracker</h4>
+                            <a href="https://mister-zeng.github.io/IP-Address-Tracker/" target="_blank"
+                              rel="noopener noreferrer">
+                                <img class="project-image" src="./images/ip-address.png" alt="IP Address Tracker">
+                            </a>
+                            <p class="project-skills">
+                                HTML, CSS, Javascript, API
+                            </p>
+                            <p class="date-created">
+                                Created on March 2022
+                            </p>
+                            <div class="button-container">
+                                <button class="view-code-button">
+                                    <a href="https://github.com/Mister-Zeng/IP-Address-Tracker" target="_blank"
+                                      rel="noopener noreferrer">
+                                        View Code
+                                    </a>
+                                </button>
+                                <button class="watch-live-button">
+                                    <a href="https://mister-zeng.github.io/IP-Address-Tracker/" target="_blank"
+                                      rel="noopener noreferrer">
+                                        Watch Live
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-sub-container reveal">
+                        <div class="advice-generator">
+                            <h4>Quote Generator</h4>
+                            <a href="https://adrian-naspud.github.io/quote-generator/" target="_blank"
+                              rel="noopener noreferrer">
+                                <img class="project-image" src="./images/quote.png" alt="Advice Generator">
+                            </a>
+                            <p class="project-skills">
+                                HTML, CSS, Javascript, API
+                            </p>
+                            <p class="date-created">
+                                Created on December 2022
+                            </p>
+                            <div class="button-container">
+                                <button class="view-code-button">
+                                    <a href="https://github.com/adrian-naspud/quote-generator" target="_blank"
+                                      rel="noopener noreferrer">
+                                        View Code
+                                    </a>
+                                </button>
+                                <button class="watch-live-button">
+                                    <a href="https://adrian-naspud.github.io/quote-generator/" target="_blank"
+                                      rel="noopener noreferrer">
+                                        Watch Live
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+
+
+                    <div class="projects-sub-container reveal">
+                        <div class="tip-calculator">
+                            <h4>Tip Calculator</h4>
+                            <a href="https://adrian-naspud.github.io/tip-calculator/" target="_blank"
+                              rel="noopener noreferrer">
+                                <img class="project-image" src="./images/tip-calculator.png" alt="Tip Calculator">
+                            </a>
+                            <p class="project-skills">
+                                HTML, CSS, JavaScript
+                            </p>
+                            <p class="date-created">
+                                Created on December 2022
+                            </p>
+                            <div class="button-container">
+                                <button class="view-code-button">
+                                    <a href="https://github.com/adrian-naspud/tip-calculator" target="_blank"
+                                      rel="noopener noreferrer">
+                                        View Code
+                                    </a>
+                                </button>
+                                <button class="watch-live-button">
+                                    <a href="https://adrian-naspud.github.io/tip-calculator/" target="_blank"
+                                      rel="noopener noreferrer">
+                                        Watch Live
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-section-background">
+                <div class="sub-heading" id="contact">
+                    <h3 class='reveal'>Contact Form</h3>
+                    <div class="contact-form-horizontal-line reveal"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"></script>
+
 </body>
+<footer>
+    <div class="footer-container">
+        <a href="https://github.com/Adrian-Naspud" target="_blank" rel="noopener noreferrer">
+            <img src="./images/github-grey-icon.svg" class="footer-icon" alt="Github">
+        </a>
+
+        <a href="https://www.linkedin.com/in/AdrianNaspud/" target="_blank" rel="noopener noreferrer">
+            <img src="./images/linkedin-grey-icon.svg" class="footer-icon" alt="LinkedIn">
+        </a>
+        <a href="mailto:adrian.naspud93@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="./images/email-grey-icon.svg" class="footer-icon" alt="Email">
+        </a>
+    </div>
+    <div class="copyright">
+        <p> &copy; 2023 ADRIAN NASPUD</p>
+    </div>
+</footer>
 
 </html>
